@@ -52,16 +52,18 @@ function processSearchResults(resultArr) {
     //results = tracks from spotify
     var results = resultArr[0];
     //add tracks from local search
-    if (resultArr[1].tracks) {
-	results.tracks = resultArr[1].tracks.concat(results.tracks);
+    if (resultArr[1] != undefined) 
+    {  
+       if (resultArr[1].tracks) {
+            results.tracks = resultArr[1].tracks.concat(results.tracks);
+        }
+        if (resultArr[1].artists) {
+    	   results.artists = resultArr[1].artists.concat(results.artists);
+        }
+        if (resultArr[1].albums) {
+    	   results.albums = resultArr[1].albums.concat(results.albums);
+        }
     }
-    if (resultArr[1].artists) {
-	results.artists = resultArr[1].artists.concat(results.artists);
-    }
-    if (resultArr[1].albums) {
-	results.albums = resultArr[1].albums.concat(results.albums);
-    }
-
     var tracks = (results.tracks) ? results.tracks : '';
     customTracklists['trackresultscache'] = tracks;
     var artists = (results.artists) ? results.artists : '';
