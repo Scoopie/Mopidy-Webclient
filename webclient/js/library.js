@@ -22,9 +22,9 @@ function initSearch() {
         document.activeElement.blur();
         $("input").blur();
 
-        $('#artistresulttable').empty();
-        $('#albumresulttable').empty();
-        $('#trackresulttable').empty();
+        $('#artistresulttable').empty().show();
+        $('#albumresulttable').empty().show();
+        $('#trackresulttable').empty().show();
         delete customTracklists['allresultscache'];
         delete customTracklists['artistresultscache'];
         delete customTracklists['albumresultscache'];

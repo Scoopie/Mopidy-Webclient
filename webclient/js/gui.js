@@ -438,15 +438,15 @@ function locationHashChanged() {
 }
 
 
-$('#searchartists').click(function() {
+$('#searchartistsHdr').click(function() {
     $('#artistresulttable').toggle();
 });
 
-$('#searchalbums').click(function() {
+$('#searchalbumsHdr').click(function() {
     $('#albumresulttable').toggle();
 });
 
-$('#searchtracks').click(function() {
+$('#searchtracksHdr').click(function() {
     $('#trackresulttable').toggle();
 });
 

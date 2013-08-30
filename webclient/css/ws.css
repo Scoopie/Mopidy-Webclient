@@ -429,6 +429,6 @@ a {
     float: right;
 }
 
-#searchtracks, #searchalbums, #searchartists {
+#searchtracksHdr, #searchalbumsHdr, #searchartistsHdr {
     cursor: pointer;
 }
