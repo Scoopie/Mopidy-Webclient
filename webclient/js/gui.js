@@ -362,6 +362,9 @@ $(document).bind("pageinit", function() {
     resizeMb();
 });
 
+
+
+
 /************************
  * diverse
  ************************/
@@ -433,3 +436,18 @@ function locationHashChanged() {
     document.title = PROGRAM_NAME;
     return false;
 }
+
+
+$('#searchartists').click(function() {
+    $('#artistresulttable').toggle();
+});
+
+$('#searchalbums').click(function() {
+    $('#albumresulttable').toggle();
+});
+
+$('#searchtracks').click(function() {
+    $('#trackresulttable').toggle();
+});
+
+
