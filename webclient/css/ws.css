@@ -428,3 +428,7 @@ a {
     margin-top: 4px;
     float: right;
 }
+
+#searchtracks, #searchalbums, #searchartists {
+    cursor: pointer;
+}
